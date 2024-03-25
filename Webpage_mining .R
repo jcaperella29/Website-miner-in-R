@@ -15,7 +15,7 @@ library("stringr")
 #Read in your urls
 
 
-urls_to_mine<-"C:/Users/ccape/Downloads/URLS for mining"
+urls_to_mine<-"path to your folder of saved websites"
 
 
 urls <- list.files(urls_to_mine, pattern="*.html", full.names=TRUE)
