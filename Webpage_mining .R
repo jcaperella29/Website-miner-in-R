@@ -75,15 +75,15 @@ article_toks <- tokens_tolower(article_toks)
 article_toks [[1]][1:20]# first 20 tokens of document 1
 
 #####Keywords in Context: What words immediately precede and follow terms of interest
+#output from each search  is to be saved as a CSV file
 
 kw_estogen <- kwic(article_toks, pattern="tumor*", window = 10)
 
-
+write.csv(kw_estogen, "path choosen by user")
 
  
 kw_outcomes <- kwic(article_toks, pattern="ER*", window = 10)
+write.csv(kw_outcomes,"path choosen by user")
 
-
-#we can find multi-word expressions
 kw_proliferation<- kwic(article_toks, pattern= "proliferation",window = 10)
-
+write.csv(kw_proliferations,"path choosen by user")
