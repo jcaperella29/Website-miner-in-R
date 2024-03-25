@@ -14,9 +14,11 @@ library("stringr")
 
 #Read in your urls
 
-url <- "https://link.springer.com/article/10.1007/s12282-024-01555-9"
-url_2<- "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2020.00120/full"
-urls<-c(url,url_2)
+
+urls_to_mine<-"C:/Users/ccape/Downloads/URLS for mining"
+
+
+urls <- list.files(urls_to_mine, pattern="*.html", full.names=TRUE)
 
 
 text_collector<-function(urls){
