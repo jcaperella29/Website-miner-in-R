@@ -8,4 +8,3 @@ An R script that will read text from websites and mine them for key words
 #a few summary statics of text is shown .
 #finally , at lines 79, 84 , 88 the user can hunt for keywords within the text. To change the keyword , simplely enter your keywords into the pattern arguement of the kwic function. 
 the user then output the results of the search as a csv , using the write.csv function on lines following the kwic searchs.
-# To use this script on your own data, enter your counts matrix in line 62 and the rest of data from your experiment especcially your phenotype information into line 64
